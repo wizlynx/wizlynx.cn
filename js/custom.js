@@ -23,6 +23,27 @@
     });
 
     /*---------------------------------------*/
+    /*	SUBMENU HOVER
+	/*---------------------------------------*/
+    $('.dropdown').hover(
+        function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+        },
+        function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+        }
+    );
+
+    $('.dropdown-menu').hover(
+        function() {
+            $(this).stop(true, true);
+        },
+        function() {
+            $(this).stop(true, true).delay(200).fadeOut();
+        }
+    );
+
+    /*---------------------------------------*/
     /*	STELLAR FOR BACKGROUND SCROLLING
 	/*---------------------------------------*/
     var isMobile = {
@@ -51,7 +72,7 @@
             responsive: true
         });
     }
-    
+
     /*---------------------------------------*/
     /*	CHANGE PUZZLE IMAGE ON MOBILE
 	/*---------------------------------------*/
@@ -165,20 +186,20 @@ $(window).resize(function () {
         }
         else {
         $('.js-login').fadeIn(200);
-            
+
         }
-        
+
         if (top > 200) {
         $('.js-register').fadeIn(200);
         }
         else {
         $('.js-register').fadeOut(200);
-            
+
         } */
     }
 
 
-    
+
 
 
     /*---------------------------------------*/
@@ -292,7 +313,7 @@ $(window).resize(function () {
 //    }
 //    //inizialize the map
 //    var map = new google.maps.Map(document.getElementById('google-container'), map_options);
-//    //add a custom marker to the map				
+//    //add a custom marker to the map
 //    var marker = new google.maps.Marker({
 //        position: new google.maps.LatLng($latitude, $longitude),
 //        map: map,

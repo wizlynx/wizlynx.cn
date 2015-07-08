@@ -39,7 +39,11 @@
     <link href="css/responsive.css" rel="stylesheet">
 
     <!--[if lt IE 9]>         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>     <![endif]--> <!--[if gte IE 9]>       <style type="text/css">         .standard-button,         .navbar-register-button {        filter: none;         }       </style>     <![endif]-->
-
+    <style media="screen">
+    .main-navigation li a:hover {
+      color: black;
+    }
+    </style>
 </head>
 <body>
 
@@ -79,10 +83,16 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-left main-navigation small-text">
                                 <li class="">
-                                    <a href="#" style="color:white">解决方案</a>
+                                    <a href="#" style="color:white">首页</a>
                                 </li>
-                                <li class="">
-                                    <a href="#" style="">经典案例</a>
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" href="#"> <i class="fa fa-chevron-down"></i> 服务</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href=""> <i class="fa fa-chevron-right"></i> 项目管理 - PMO </a></li>
+                                        <li><a href=""> <i class="fa fa-chevron-right"></i> 信息安全 - ISEC </a></li>
+                                        <li><a href=""> <i class="fa fa-chevron-right"></i> IT项目质量管理 - PQM </a></li>
+                                        <li><a href=""> <i class="fa fa-chevron-right"></i> 企业移动管理 - EMM </a></li>
+                                    </ul>
                                 </li>
                                 <li class="">
                                     <a style="padding-right: 0;" href="special-deal.html" class="external">最新特价产品<span class="new"></span></a>
