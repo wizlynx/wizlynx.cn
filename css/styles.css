@@ -1331,3 +1331,11 @@ Modules - reusable parts of our design
 .xs-no-margin-top {
     margin-top: 30px;
 }
+
+.dropdown-menu {
+    background-color: #353535;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: transparent;
+}
